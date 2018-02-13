@@ -6,7 +6,7 @@ var socketio = require('socket.io'); //Just Require the Socket Io to use it in t
 var app = express();
 
 //create a server and store it in a variable server..
-var server = app.listen(3000, function(){
+var server = app.listen(process.env.PORT || '3000', function(){
     console.log('Server is running Successfully on the Port Specified..');
 });
 
